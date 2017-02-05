@@ -1,0 +1,44 @@
+{
+  "name": "typescript-book",
+  "version": "1.0.0",
+  "description": "Codefiction typescript book ceviri projesi",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "karma start",
+    "start": "npm run build:live",
+    "build:live": "nodemon --exec ./node_modules/.bin/ts-node -- ./src/index.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/msusur/typescript-book.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/msusur/typescript-book/issues"
+  },
+  "homepage": "https://github.com/msusur/typescript-book#readme",
+  "dependencies": {
+    "hunspell-spellchecker": "^1.0.2",
+    "node-dir": "^0.1.16",
+    "nodehun": "^2.0.11",
+    "rxjs": "^5.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^7.0.5",
+    "@types/node-dir": "0.0.30",
+    "jasmine-core": "^2.5.2",
+    "karma": "^1.4.1",
+    "karma-babel-preprocessor": "^6.0.1",
+    "karma-browserify": "^5.1.1",
+    "karma-es6-shim": "^1.0.0",
+    "karma-jasmine": "^1.1.0",
+    "karma-phantomjs-launcher": "^1.0.2",
+    "karma-requirejs": "^0.2.6",
+    "nodemon": "^1.11.0",
+    "requirejs": "^2.3.2",
+    "ts-node": "^2.0.0",
+    "typescript": "^2.1.5",
+    "watchify": "^3.9.0"
+  }
+}
