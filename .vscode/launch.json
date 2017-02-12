@@ -5,6 +5,15 @@
   "version": "0.2.0",
   "configurations": [
     {
+      "type": "node",
+      "request": "launch",
+      "name": "Karma Tests",
+      "program": "${workspaceRoot}/node_modules/.bin/karma",
+      "args": [
+        "start"
+      ]
+    },
+    {
       "name": "Launch TypeScript",
       "type": "node",
       "request": "launch",
