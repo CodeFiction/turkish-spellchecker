@@ -22,15 +22,15 @@ export class SpellChecker {
   }
 
   public spellChecker(fileContent: FileContent): SpellCheckResult {
-    const content: string = fileContent.Content.toString();
+    const content: string = fileContent.content.toString();
     if (content.match(/\[ignore\]\:/)) {
-      return new IgnoredCheckResult(fileContent.Name);
+      return new IgnoredCheckResult(fileContent.name);
     }
 
     var words: RegExpMatchArray = content.match(/\S+/gi);
 
     const spellResult: SpellCheckResult =
-      new SpellCheckResult(fileContent.Name);
+      new SpellCheckResult(fileContent.name);
 
     words.forEach((word: string, index: number) => {
       let isCorrect = this.internalChecker.check(word);

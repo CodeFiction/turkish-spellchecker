@@ -1,4 +1,4 @@
-require('../bin/index.js');
+//require('../bin/index');
 
 describe('stuff', () => {
     it('should do stuff', () => {

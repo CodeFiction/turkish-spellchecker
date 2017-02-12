@@ -4,7 +4,8 @@
   "description": "Codefiction typescript book ceviri projesi",
   "main": "src/index.js",
   "scripts": {
-    "test": "jasmine-node tests/",
+    "test": "gulp",
+    "build": "gulp compile",
     "start": "npm run build:live",
     "build:live": "nodemon --exec ./node_modules/.bin/ts-node -- ./src/index.ts"
   },
@@ -37,6 +38,7 @@
     "@types/node-dir": "0.0.30",
     "babel-polyfill": "^6.22.0",
     "browserify": "^14.0.0",
+    "chai": "^3.5.0",
     "expect.js": "^0.3.1",
     "gulp": "^3.9.1",
     "gulp-jasmine": "^2.4.2",
@@ -50,6 +52,8 @@
     "reflect-metadata": "^0.1.9",
     "requirejs": "^2.3.2",
     "run-sequence": "^1.2.2",
+    "sinon": "^1.17.7",
+    "sinon-chai": "^2.8.0",
     "sourcemap": "^0.1.0",
     "ts-node": "^2.0.0",
     "typescript": "^2.1.5",

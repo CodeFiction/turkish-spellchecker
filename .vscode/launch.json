@@ -8,10 +8,7 @@
       "type": "node",
       "request": "launch",
       "name": "Karma Tests",
-      "program": "${workspaceRoot}/node_modules/.bin/karma",
-      "args": [
-        "start"
-      ]
+      "program": "${workspaceRoot}/node_modules/.bin/gulp"
     },
     {
       "name": "Launch TypeScript",
