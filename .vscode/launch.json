@@ -5,6 +5,12 @@
   "version": "0.2.0",
   "configurations": [
     {
+      "type": "node",
+      "request": "launch",
+      "name": "Karma Tests",
+      "program": "${workspaceRoot}/node_modules/.bin/gulp"
+    },
+    {
       "name": "Launch TypeScript",
       "type": "node",
       "request": "launch",

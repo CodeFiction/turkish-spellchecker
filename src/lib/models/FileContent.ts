@@ -1,4 +1,5 @@
 export class FileContent {
-  public Content: Buffer | string;
-  public Name: string;
+  constructor(public content: Buffer | string, public name: string){
+
+  }
 }

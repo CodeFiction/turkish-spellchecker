@@ -23,10 +23,8 @@ export class FileLoader {
           if (e) {
             observer.onError(e);
           } else {
-            let fileContent = new FileContent();
-            fileContent.Content = content;
-            fileContent.Name = filename;
-
+            let fileContent = new FileContent(content, filename);
+            
             observer.next(fileContent);
             next();
           }

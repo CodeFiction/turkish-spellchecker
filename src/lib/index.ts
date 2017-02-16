@@ -1,3 +1,4 @@
 export * from './fileLoader';
-export * from './spellChecker';
+export * from './SpellChecker';
 export * from './SpellCheckerManager';
+export * from './ConsoleLogger';
